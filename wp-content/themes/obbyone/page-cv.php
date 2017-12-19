@@ -1,3 +1,5 @@
+<?php /* Template Name: CV*/ ?>
+
 <?php get_header(); ?>
    
 
