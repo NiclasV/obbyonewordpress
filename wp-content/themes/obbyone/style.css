@@ -20,6 +20,7 @@ body {
     background: #FFFFFF;
     background-image: url("../../uploads/2017/12/background2.jpg");
     background-position: center;
+    color: #FFFFFF;
 }
 
 h1 {
@@ -35,7 +36,7 @@ p .logo {
     padding: 30px;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.6);
-    max-width: 960px;
+    max-width: 940px;
     margin-bottom: 40px;
     
 }
@@ -48,10 +49,17 @@ nav {
 
 
 .content {
-    color: #FFFFFF;
-
+    margin: 40px 0 40px 0;
 }
 
+.center {
+    text-align: center;
+}
+
+.indented {
+    padding: 0 30px 0 30px;
+    margin-bottom: 50px;
+}
 
 footer {
     color: #FFFFFF;
@@ -112,4 +120,90 @@ hr {
     text-decoration: none; !important
 
 }
+
+.profileinfo {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+
+}
+
+.img-wrapper {
+    width: 35%;
+    height: 300px;
+
+}
+
+.img {
+    width: 300px;
+    height: 285px;
+    background: #000000;
+    margin: 7px auto;
+    border: 6px solid white;
+}
+
+.profiledetails {
+    padding-left: 15px;
+    width: 65%; 
+}
+
+.profiledetails h1 {
+    margin-top: -4px;
+    margin-bottom: -15px;
+    font-size: 6.8em;
+    line-height: 0.85em;
+    font-family: 'Titillium Web', "sans-serif";
+    font-weight: 700;
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+
+/******
+ GENERAL TYPO
+
+ ******/
+
+h1 {
+    font-family: 'Titillium Web', "sans-serif";
+    color: lightblue;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.3em;
+    color: #e6e6e6;    
+}
+.quote {
+    font-family: 'Titillium Web', "sans-serif";
+    font-size: 4em;
+    font-weight: 300;
+    line-height: 1em;
+    font-style: italic;
+    letter-spacing: 0.02em;
+}
+
+.lightblue {
+    color: lightblue;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+.roles {
+    font-family: 'Titillium Web', "sans-serif";
+    font-weight: 700;
+    font-size: 1.3em;
+    padding-left: 10px;
+    font-style: italic;
+    letter-spacing: 0.03em;
+}
+
+.slash {
+    letter-spacing: 0.1em;
+}
+
 

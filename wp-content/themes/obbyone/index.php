@@ -5,13 +5,23 @@
         
             <h1>This is my index</h1>
 
-            <?php if (have_posts()) :
-   while (have_posts()) :
-      the_post();
-         the_content();
-   endwhile;
-   
-endif; ?>
+        <?php 
+            //THE WORDPRESS LOOP
+            if( have_posts() ):
+                while( have_posts() ) : the_post();
+                
+                    //WHAT TO POST TO EACH POST
+                    the_title();
+                    echo "<br>";
+                    the_author();
+                    echo "<br>";
+                    the_time(); the_date();
+                    the_category();
+                    the_content();
+
+                endwhile;
+            endif;
+        ?>
 
         </main>
 
