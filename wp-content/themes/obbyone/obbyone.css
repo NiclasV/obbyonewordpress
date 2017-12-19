@@ -1,0 +1,23 @@
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: #FFFFFF;
+}
+
+body {
+    background-image: url("../../uploads/2017/12/background.jpg");
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.site {
+	background: #000000;
+}
+
+
+.content {
+	background: #000000;
+}

@@ -1,0 +1,115 @@
+/*
+
+Theme Name: obbyone 
+Theme URI: http://obbyone.com/obbyonetheme
+Author: Niclas Victorsson
+Description: First theme
+Version: 0.1 Alpha
+
+*/
+html {
+    margin-top: 0px !important; 
+}
+
+html,
+body {
+    
+    min-height: 1500px;
+    margin: 0 auto;
+    padding: 0;
+    background: #FFFFFF;
+    background-image: url("../../uploads/2017/12/background2.jpg");
+    background-position: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p .logo {
+    font-size: 2em;
+}
+
+.site {
+    min-height: 2000px;
+    padding: 30px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 960px;
+    margin-bottom: 40px;
+    
+}
+
+nav {
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+
+.content {
+    color: #FFFFFF;
+
+}
+
+
+footer {
+    color: #FFFFFF;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+hr {
+    width: 100%
+    background-color: #FFFFFF;
+    border: 1.2px solid white;
+    margin: 25px 0 25px 0;
+}
+
+.main-navigation {
+    padding: 5px 0 20px 0;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.nav-left-logo {
+    width: 30%;
+}
+
+.nav-right-menu {
+    width: 70%;
+}
+
+.main-navigation ul{
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    font-size: 0.95em;
+    font-style: italic;
+    text-align: right;
+}
+
+.main-navigation li{
+    padding: 8px 16px 8px 16px;
+    border-radius: 0px;
+    box-sizing: border-box;
+    display: inline;
+    border: 2px solid white;
+    margin-left: 10px;
+}
+    
+ a {
+    color: #FFFFFF;
+    text-decoration: none; !important
+
+}
+
+ a:hover {
+    color: #9accff;
+    text-decoration: none; !important
+
+}
+
