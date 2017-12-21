@@ -4,7 +4,7 @@
     <head>
     <meta charset="utf-8">
     <title>obbyone</title>
-    <link rel="stylesheet" type="text/css" href="http://localhost/wp-content/themes/obbyone/style.css?ver=4.9.1">
+    <link rel="stylesheet" type="text/css" href="http://localhost/wp-content/themes/obbyone/style.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300i,400,700i" rel="stylesheet">  
     <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
     </head>

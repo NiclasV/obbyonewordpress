@@ -18,8 +18,8 @@ body {
     margin: 0 auto;
     padding: 0;
     background: #FFFFFF;
-    background-image: url("../../uploads/2017/12/background2.jpg");
-    background-position: center;
+    background-image: url("../../uploads/2017/12/background4.jpg");
+    background-position: center top;
     color: #FFFFFF;
 }
 
@@ -32,7 +32,7 @@ p .logo {
 }
 
 .site {
-    min-height: 2000px;
+
     padding: 30px;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.6);
@@ -69,8 +69,7 @@ footer {
 
 hr {
     width: 100%
-    background-color: #FFFFFF;
-    border: 1.2px solid white;
+    background: #FFFFFF;
     margin: 25px 0 25px 0;
 }
 
@@ -134,7 +133,7 @@ hr {
 
 }
 
-.img {
+.profilepic {
     width: 300px;
     height: 285px;
     background: #000000;
@@ -156,8 +155,13 @@ hr {
     font-weight: 700;
     font-style: italic;
     color: #FFFFFF;
+    letter-spacing: 0;
 }
 
+.space {
+    width: 100%;
+    height: 20px;
+}
 
 /******
  GENERAL TYPO
@@ -166,17 +170,20 @@ hr {
 
 h1 {
     font-family: 'Titillium Web', "sans-serif";
-    color: lightblue;
+    color: #6fa1d4  ;
     font-size: 1.2em;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
     line-height: 1.3em;
-    color: #e6e6e6;    
+    color: #e6e6e6;
+    font-size: 0.95em;
 }
+
 .quote {
     font-family: 'Titillium Web', "sans-serif";
     font-size: 4em;
@@ -184,13 +191,6 @@ p {
     line-height: 1em;
     font-style: italic;
     letter-spacing: 0.02em;
-}
-
-.lightblue {
-    color: lightblue;
-}
-.uppercase {
-    text-transform: uppercase;
 }
 
 .roles {
@@ -202,8 +202,27 @@ p {
     letter-spacing: 0.03em;
 }
 
-.slash {
-    letter-spacing: 0.1em;
+.white {
+    color: #FFFFFF;
 }
 
+.lightblue {
+    color: #6fa1d4;
+}
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.jobdetails {
+    font-size: 1.15em;
+}
+
+.studydetails {
+    font-size: 1.15em;
+    margin-bottom: 5px;
+}
+
+.bold {
+    font-weight: 700;
+}
