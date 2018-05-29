@@ -4,28 +4,25 @@
         <main class="content" role="main">
         
             <h1>This is my index</h1>
-
+        <section class="posts-flex">
         <?php 
             //THE WORDPRESS LOOP
-            if( have_posts() ):
-                while( have_posts() ) : the_post();
+            if( have_posts() ) : while( have_posts() ) : the_post();
                 
                     //WHAT TO POST TO EACH POST
-                    the_title();
-                    echo "<br>";
-                    the_author();
-                    echo "<br>";
-                    the_time(); the_date();
+                    echo '<div class="post-item">';
+                    echo '<div class="img-container">';
+                    the_post_thumbnail();
+                    echo '</div>';
+                    echo '<h2>'; the_title(); echo '</h2>';
                     the_category();
                     the_content();
+                    echo '</div>';
 
                 endwhile;
             endif;
         ?>
-
+        </section>
         </main>
-
-
-
-
+        
     <?php get_footer(); ?>

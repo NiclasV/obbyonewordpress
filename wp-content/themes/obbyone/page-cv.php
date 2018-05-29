@@ -6,35 +6,56 @@
 
     <!-- PROFILINFO SECTION -->
     <div class="profileinfo">
+
         <div class="img-wrapper">
-        
-        <?php 
-            //Get current user for displaying the avatar from Gravatar
-            $user = wp_get_current_user(); if ( $user ) :
-        ?>      
-                                    <!-- Print the Gravatar image  -->
-        <img class="profilepic" src="<?php echo esc_url( get_avatar_url( $user->ID)); ?>" />
-        <?php endif; ?> 
+            <!-- Print the Gravatar image  -->
+            <?php echo get_avatar( 'obbybobson@gmail.com', 300 ); ?>
         </div>
 
         <div class="profiledetails">
-
             <?php //Get current user info to display first and last name
-                global $current_user; get_currentuserinfo();
+            $user_info = get_userdata(1);
+            $first_name = $user_info->first_name;
+            $last_name = $user_info->last_name;
             ?>
+      
             <h1 class="uppercase">
-                <? echo $current_user->user_firstname?><br>
-                <? echo $current_user->user_lastname?>
+                <? echo $first_name;?><br>
+                <? echo $last_name;?>
             </h1>
 
             <p class="roles uppercase"><span class="lightblue"> Grafisk Formgivare</span>  //  
-                <span class="lightblue">Front-end utvecklare</span>  //  
-                <span class="lightblue">Fotograf</span></p>
+            <span class="lightblue">Front-end utvecklare</span>  //  
+            <span class="lightblue">Fotograf</span></p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <a href="http://github.com/niclasV" target="_blank">
+                    <i class="fab fa-github-square fa-3x"></i><br>
+                    <span class="contact-text">Me @ Github</span></a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.linkedin.com/in/niclas-victorsson-3b03713a/" target="_blank">
+                    <i class="fab fa-linkedin fa-3x"></i><br>
+                    <span class="contact-text">Me @ LinkedIn</span></a>
+                </div>
+                <div class="contact-item">
+                    <a href="tel:0768124922" target="_blank">
+                    <i class="fas fa-phone-square fa-3x"></i><br>
+                    <span class="contact-text">0768124922</span></a>    
+                </div>
+                <div class="contact-item">
+                    <a href="mailto:obbybobson@gmail.com?Subject=Tjena%20Nicke!">
+                    <i class="fas fa-envelope-square fa-3x"></i><br>
+                    <span class="contact-text">obbybobson@gmail.com</span></a>
+                </div>
+            </div>
         </div>
+
     </div> <!-- END PROFILEINFO -->
 
 
 <?php
+
     // TO SHOW THE PAGE CONTENTS
     while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
         <div class="entry-content-page">
@@ -47,8 +68,6 @@
 ?>
 
 </main>
-
-
 
 
 <?php get_footer(); ?>
